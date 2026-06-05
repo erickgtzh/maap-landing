@@ -1,5 +1,5 @@
 import './style.css'
-import logoFull from './assets/logo-full.png'
+import logoFull from './assets/logo-full-green.png'
 import logoMark from './assets/logo-mark.png'
 
 const site = {
