@@ -104,7 +104,8 @@ const valuePills = site.values
 document.querySelector('#app').innerHTML = `
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Ir al inicio de ${site.brand}">
-      <img src="${logoFull}" alt="Logo de ${site.brand}" />
+      <img class="brand-logo brand-logo-full" src="${logoFull}" alt="Logo de ${site.brand}" />
+      <img class="brand-logo brand-logo-mark" src="${logoMark}" alt="Isotipo de ${site.brand}" />
     </a>
 
     <nav class="nav" aria-label="Principal">

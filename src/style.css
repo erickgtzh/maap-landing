@@ -30,11 +30,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background: transparent;
   color: var(--text);
 }
@@ -56,6 +58,7 @@ a {
 
 #app {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .container {
@@ -79,8 +82,18 @@ a {
   backdrop-filter: blur(18px);
 }
 
-.brand img {
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo-full {
   width: clamp(150px, 18vw, 220px);
+}
+
+.brand-logo-mark {
+  display: none;
+  width: 48px;
 }
 
 .nav {
@@ -570,22 +583,56 @@ h3 {
 
 @media (max-width: 720px) {
   .site-header {
-    position: static;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    align-items: center;
+    gap: 0.25rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    width: 24px;
+  }
+
+  .brand-logo-full {
+    display: none;
+  }
+
+  .brand-logo-mark {
+    display: block;
+    width: 24px;
   }
 
   .nav {
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    min-width: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 0;
   }
 
   .nav a {
-    padding: 0.75rem 0.85rem;
-    font-size: 0.82rem;
+    display: block;
+    min-width: 0;
+    padding: 0.18rem 0;
+    text-align: center;
+    font-size: 0.42rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    white-space: nowrap;
+  }
+
+  h1 {
+    max-width: 8ch;
+    font-size: clamp(2.9rem, 14vw, 4rem);
   }
 
   .hero-section {
@@ -622,5 +669,27 @@ h3 {
 
   .footer-content img {
     width: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header {
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 0.35rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .brand {
+    width: 22px;
+  }
+
+  .brand-logo-mark {
+    width: 22px;
+  }
+
+  .nav a {
+    padding: 0.22rem 0;
+    font-size: 0.4rem;
   }
 }
