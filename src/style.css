@@ -74,8 +74,8 @@ a {
   width: 100%;
   margin: 0;
   padding: 1rem max(1rem, calc((100% - 1120px) / 2));
-  background: rgba(24, 78, 68, 0.94);
-  border-bottom: 1px solid rgba(60, 151, 133, 0.22);
+  background: rgba(8, 38, 40, 0.92);
+  border-bottom: 1px solid rgba(164, 239, 231, 0.08);
   backdrop-filter: blur(18px);
 }
 
@@ -512,8 +512,8 @@ h3 {
 
 .site-footer {
   padding: 0;
-  background: rgba(24, 78, 68, 0.94);
-  border-top: 1px solid rgba(60, 151, 133, 0.22);
+  background: rgba(8, 38, 40, 0.92);
+  border-top: 1px solid rgba(164, 239, 231, 0.08);
 }
 
 .footer-content {
