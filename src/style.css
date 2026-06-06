@@ -587,10 +587,10 @@ h3 {
     grid-template-columns: 52px minmax(0, 1fr);
     align-items: center;
     gap: 0.8rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 0.85rem);
+    padding-bottom: 0.9rem;
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
   }
 
   .brand {
@@ -674,8 +674,8 @@ h3 {
   .site-header {
     grid-template-columns: 44px minmax(0, 1fr);
     gap: 0.65rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+    padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
   }
 
   .brand {
