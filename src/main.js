@@ -4,7 +4,7 @@ import logoMark from './assets/logo-mark.png'
 
 const site = {
   brand: 'MAAP Corporation',
-  email: 'maaplogisticsas6@gmail.com',
+  email: 'maaplogisticsags@gmail.com',
   phoneDisplay: '449 103 8676',
   phoneRaw: '524491038676',
   hero: {
