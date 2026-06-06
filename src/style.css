@@ -533,7 +533,7 @@ h3 {
   align-items: center;
   justify-content: center;
   flex: 0 0 52px;
-  width: 52px;
+  width: 76px;
   height: 52px;
   color: var(--teal);
   border-radius: 16px;
@@ -619,18 +619,18 @@ h3 {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: 52px minmax(0, 1fr);
+    grid-template-columns: 76px minmax(0, 1fr);
     align-items: center;
-    gap: 0.8rem;
-    padding-top: calc(env(safe-area-inset-top, 0px) + 0.85rem);
-    padding-bottom: 0.9rem;
+    gap: 1rem;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 1.15rem);
+    padding-bottom: 1.15rem;
     padding-left: max(1rem, env(safe-area-inset-left, 0px));
     padding-right: max(1rem, env(safe-area-inset-right, 0px));
   }
 
   .brand {
     display: inline-flex;
-    width: 52px;
+    width: 76px;
   }
 
   .brand-logo-full {
@@ -654,9 +654,9 @@ h3 {
   .nav a {
     display: block;
     min-width: 0;
-    padding: 0.5rem 0;
+    padding: 0.62rem 0;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.22rem;
     font-weight: 700;
     letter-spacing: 0;
     text-transform: none;
@@ -715,22 +715,22 @@ h3 {
 
 @media (max-width: 420px) {
   .site-header {
-    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-columns: 64px minmax(0, 1fr);
     gap: 0.65rem;
     padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
     padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
   }
 
   .brand {
-    width: 44px;
+    width: 64px;
   }
 
   .brand-logo-mark {
-    width: 44px;
+    width: 64px;
   }
 
   .nav a {
-    padding: 0.42rem 0;
-    font-size: 0.86rem;
+    padding: 0.56rem 0;
+    font-size: 1.08rem;
   }
 }
