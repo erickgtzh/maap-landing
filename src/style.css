@@ -129,6 +129,7 @@ a {
 .hero-backdrop {
   position: absolute;
   inset: 0;
+  overflow: hidden;
   background:
     radial-gradient(circle at 20% 20%, rgba(40, 215, 194, 0.22), transparent 24%),
     radial-gradient(circle at 80% 30%, rgba(62, 163, 255, 0.18), transparent 22%),
@@ -155,7 +156,7 @@ a {
 }
 
 .beam-1 {
-  right: -8%;
+  right: -4%;
   bottom: 14%;
   width: 34vw;
   height: 92px;
@@ -190,18 +191,20 @@ a {
 
 .video-band {
   position: relative;
-  padding: 0 0 1.5rem;
+  padding: 1rem 0 2.25rem;
   background: linear-gradient(180deg, rgba(7, 24, 31, 0.12), rgba(7, 24, 31, 0.42));
 }
 
 .video-band-shell {
   position: relative;
-  width: 100%;
-  height: clamp(160px, 18vw, 220px);
-  overflow: clip;
-  border-top: 1px solid rgba(164, 239, 231, 0.08);
-  border-bottom: 1px solid rgba(164, 239, 231, 0.08);
+  width: min(1120px, calc(100% - 2rem));
+  aspect-ratio: 12 / 5;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(164, 239, 231, 0.1);
+  border-radius: 28px;
   background: #07181f;
+  box-shadow: var(--shadow);
 }
 
 .video-band-media {
@@ -217,8 +220,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4, 9, 14, 0.24), rgba(4, 9, 14, 0.42)),
-    linear-gradient(90deg, rgba(7, 24, 31, 0.35), rgba(7, 24, 31, 0.12) 28%, rgba(7, 24, 31, 0.12) 72%, rgba(7, 24, 31, 0.35));
+    linear-gradient(180deg, rgba(4, 9, 14, 0.18), rgba(4, 9, 14, 0.34)),
+    linear-gradient(90deg, rgba(7, 24, 31, 0.2), rgba(7, 24, 31, 0.04) 22%, rgba(7, 24, 31, 0.04) 78%, rgba(7, 24, 31, 0.2));
   pointer-events: none;
 }
 
@@ -673,11 +676,14 @@ h3 {
   }
 
   .video-band {
+    padding-top: 0.75rem;
     padding-bottom: 1rem;
   }
 
   .video-band-shell {
-    height: clamp(112px, 32vw, 148px);
+    width: min(100% - 1rem, 1120px);
+    aspect-ratio: 12 / 5;
+    border-radius: 22px;
   }
 
   .hero-content,
