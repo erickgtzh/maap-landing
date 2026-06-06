@@ -72,6 +72,7 @@ const whatsappMessage = encodeURIComponent(
 )
 const whatsappUrl = `https://wa.me/${site.phoneRaw}?text=${whatsappMessage}`
 const mailtoUrl = `mailto:${site.email}`
+const wallaceVideoUrl = `${import.meta.env.BASE_URL}wallace.mov`
 
 const statCards = site.trust.stats
   .map(
@@ -145,6 +146,16 @@ document.querySelector('#app').innerHTML = `
             <li>Enlace directo por WhatsApp y correo</li>
           </ul>
         </aside>
+      </div>
+    </section>
+
+    <section class="video-band" aria-label="Video de operación MAAP">
+      <div class="video-band-shell">
+        <video class="video-band-media" autoplay muted loop playsinline preload="metadata">
+          <source src="${wallaceVideoUrl}" type="video/quicktime" />
+          <source src="${wallaceVideoUrl}" type="video/mp4" />
+        </video>
+        <div class="video-band-overlay" aria-hidden="true"></div>
       </div>
     </section>
 
