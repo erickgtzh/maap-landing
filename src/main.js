@@ -212,12 +212,8 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="contact-section container" id="contacto">
-      <div class="contact-copy">
-        <p class="eyebrow">Contacto</p>
+      <div class="contact-copy contact-copy-minimal">
         <h2>Envíanos un mensaje y coordinemos tu siguiente movimiento.</h2>
-        <p>
-          Por ahora dejamos un contacto directo y simple, tal como se definió en la propuesta: WhatsApp como canal principal y correo como respaldo.
-        </p>
       </div>
 
       <div class="contact-card">

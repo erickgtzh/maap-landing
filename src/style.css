@@ -197,7 +197,7 @@ a {
 
 .video-band-shell {
   position: relative;
-  width: min(1120px, calc(100% - 2rem));
+  width: min(720px, calc(100% - 2rem));
   aspect-ratio: 12 / 5;
   margin: 0 auto;
   overflow: hidden;
@@ -213,15 +213,15 @@ a {
   object-fit: cover;
   object-position: center;
   display: block;
-  filter: saturate(0.9) contrast(1.02) brightness(0.78);
+  filter: saturate(0.96) contrast(1.03) brightness(0.9);
 }
 
 .video-band-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4, 9, 14, 0.18), rgba(4, 9, 14, 0.34)),
-    linear-gradient(90deg, rgba(7, 24, 31, 0.2), rgba(7, 24, 31, 0.04) 22%, rgba(7, 24, 31, 0.04) 78%, rgba(7, 24, 31, 0.2));
+    linear-gradient(180deg, rgba(4, 9, 14, 0.08), rgba(4, 9, 14, 0.18)),
+    linear-gradient(90deg, rgba(7, 24, 31, 0.12), rgba(7, 24, 31, 0.02) 22%, rgba(7, 24, 31, 0.02) 78%, rgba(7, 24, 31, 0.12));
   pointer-events: none;
 }
 
@@ -507,6 +507,15 @@ h3 {
   align-items: stretch;
 }
 
+.contact-copy-minimal {
+  display: flex;
+  align-items: center;
+}
+
+.contact-copy-minimal h2 {
+  max-width: 12ch;
+}
+
 .contact-card {
   display: grid;
   gap: 1rem;
@@ -681,7 +690,7 @@ h3 {
   }
 
   .video-band-shell {
-    width: min(100% - 1rem, 1120px);
+    width: calc(100% - 1rem);
     aspect-ratio: 12 / 5;
     border-radius: 22px;
   }
