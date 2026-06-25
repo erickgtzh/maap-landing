@@ -555,6 +555,7 @@ h3 {
 .contact-icon svg {
   width: 28px;
   height: 28px;
+  overflow: visible;
 }
 
 .panel-icon svg {
