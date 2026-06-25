@@ -226,7 +226,7 @@ document.querySelector('#app').innerHTML = `
         </a>
 
         <a class="contact-item" href="${whatsappUrl}" target="_blank" rel="noreferrer">
-          <span class="contact-icon" aria-hidden="true">${whatsappIcon()}</span>
+          <span class="contact-icon contact-icon--whatsapp" aria-hidden="true">${whatsappIcon()}</span>
           <span>
             <strong>WhatsApp</strong>
             <small>${site.phoneDisplay}</small>
