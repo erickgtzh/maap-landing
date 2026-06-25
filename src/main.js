@@ -278,11 +278,9 @@ function mailIcon() {
 
 function whatsappIcon() {
   return `
-    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <g transform="translate(4 4)">
-        <path d="M20 11.5c0 4.7-3.8 8.5-8.5 8.5a8.4 8.4 0 0 1-4-.9L4 20l1-3.4a8.4 8.4 0 0 1-1-4.1C4 7.8 7.8 4 12.5 4S21 7.8 21 12.5Z"></path>
-        <path d="M9.6 8.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.5 1.2c.1.2.1.4 0 .5l-.4.7c-.1.2-.1.3 0 .5.3.5.8 1.2 1.7 1.8.2.1.4.1.5 0l.8-.5c.2-.1.3-.1.5 0l1.2.6c.2.1.3.2.3.4v.4c0 .4-.2.7-.5.9-.4.2-.9.3-1.5.2-.9-.1-2-.7-3.2-1.8-1.2-1.1-1.9-2.2-2.1-3.2-.1-.6 0-1.1.2-1.6Z"></path>
-      </g>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20.3 11.8c0 4.8-3.9 8.7-8.7 8.7a8.5 8.5 0 0 1-4.1-1L4 20.5l1-3.6a8.6 8.6 0 0 1-1.1-4.2C3.9 7.9 7.8 4 12.6 4s8.7 3.9 8.7 8.7Z"></path>
+      <path d="M9.4 8.7c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.6 1.3c.1.2.1.4 0 .6l-.4.7c-.1.2-.1.3 0 .5.3.6.9 1.3 1.8 1.9.2.1.4.1.6 0l.8-.5c.2-.1.4-.1.6 0l1.3.6c.2.1.3.3.3.5v.4c0 .4-.2.8-.6 1-.4.2-1 .3-1.6.2-1-.1-2.1-.8-3.4-1.9-1.2-1.2-2-2.3-2.2-3.4-.1-.7 0-1.3.3-1.8Z"></path>
     </svg>
   `
 }

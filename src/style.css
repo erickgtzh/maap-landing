@@ -559,9 +559,8 @@ h3 {
 }
 
 .contact-icon--whatsapp svg {
-  width: 31px;
-  height: 31px;
-  transform: translateX(1px);
+  width: 30px;
+  height: 30px;
 }
 
 .contact-item > span:last-child {
